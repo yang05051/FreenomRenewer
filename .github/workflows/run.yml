@@ -1,4 +1,4 @@
-name: Check and renew domains
+name: Check and Renew Domains
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
     - cron: 5 */6 * * *
 jobs:
   run-it:
+    name: Runs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
