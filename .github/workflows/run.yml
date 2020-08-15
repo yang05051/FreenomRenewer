@@ -12,18 +12,18 @@
 #
 ######  end 说明  ######
 
-name: Run it on action
+name: Check and Renew Domains
 
 on:
   push:
     branches:
       - master
   schedule:
-    - cron: 00 02 * * *
+    - cron: 5 */5 * * *
 jobs:
   run-it:
-    runs-on: ubuntu-18.04
-    name: Run it on action
+    runs-on: ubuntu-latest
+    name: Check and Renew Domains
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
