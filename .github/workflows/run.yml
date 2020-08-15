@@ -1,4 +1,4 @@
-name: Freenom Renewer
+name: Check and renew domains
 
 on:
   push:
@@ -9,7 +9,6 @@ on:
 jobs:
   run-it:
     runs-on: ubuntu-latest
-    name: Check and renew domains
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
