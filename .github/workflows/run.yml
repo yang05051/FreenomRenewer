@@ -6,10 +6,14 @@ on:
       - master
   schedule:
     - cron: 0 */6 * * *
+  watch:
+    types: started
+
 jobs:
   run-it:
     name: Runs
     runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
