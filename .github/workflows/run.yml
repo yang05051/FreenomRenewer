@@ -3,7 +3,7 @@ name: Check and Renew Domains
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: 0 */24 * * *
   watch:
