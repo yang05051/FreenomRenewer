@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout master
+      - name: Checkout repo
         uses: actions/checkout@v2
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
