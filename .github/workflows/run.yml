@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@main
       - name: Setup PHP
-        uses: shivammathur/setup-php@main
+        uses: shivammathur/setup-php@master
         with:
           php-version: '7.2'
       - name: Import secrets
