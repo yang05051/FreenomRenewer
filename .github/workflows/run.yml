@@ -8,7 +8,7 @@ on:
     - cron: 0 */24 * * *
   watch:
     types: started
-  workflow_dispatch:
+  repository_dispatch:
 
 jobs:
   run-it:
